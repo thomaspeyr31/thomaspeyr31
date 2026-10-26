@@ -1,10 +1,14 @@
 # Thomas Peyrusaubes
 
-Étudiant en **Infrastructure & Développement** (Ynov), orienté **DevOps / Cloud**.
-Actuellement en stage sur du déploiement d'infrastructure cloud-native AWS.
+**Alternant en cybersécurité chez Retengr · Bachelor Cybersécurité, Ynov Toulouse**
 
-J'aime concevoir des infrastructures propres et reproductibles (Infrastructure-as-Code,
-conteneurs, CI/CD) et comprendre la chaîne de bout en bout : du réseau au déploiement applicatif.
+Orienté **sécurité cloud et DevSecOps**.
+
+Je conçois et sécurise des infrastructures reproductibles : Infrastructure-as-Code,
+durcissement des systèmes, accès au moindre privilège, supervision, et pipelines
+CI/CD avec des contrôles de sécurité intégrés.
+
+🎯 Je cherche une **alternance en sécurité cloud / DevSecOps** pour mon Mastère, à partir de **septembre 2027**.
 
 ---
 
@@ -12,33 +16,49 @@ conteneurs, CI/CD) et comprendre la chaîne de bout en bout : du réseau au dép
 
 | Domaine | Technologies |
 |---|---|
-| Cloud / IaC | AWS, Terraform, Ansible, Docker |
-| CI/CD | GitHub Actions, OIDC, ECR/ECS |
-| Réseau & systèmes | Cisco (VLAN, OSPF, ACL), Active Directory, Linux |
-| Développement | Go, C# / .NET, PHP, Java, JavaScript (Node, React) |
-| Bases de données | PostgreSQL, MySQL, SQLite |
+| Sécurité | Durcissement Linux et Windows (SSH par clé, Fail2ban, UFW, GPO), bastion, IAM au moindre privilège, audit de configuration IaC |
+| Cloud / IaC | AWS (VPC, EC2, ECS Fargate, RDS, S3, Transit Gateway), Terraform, Ansible |
+| DevSecOps / CI-CD | GitHub Actions (OIDC), Docker, Checkov, Trivy, Dependabot |
+| Réseau | VLAN, OSPF, ACL, NAT, VPN IPSec, OPNsense, pfSense |
+| Systèmes | Linux (Debian, Ubuntu), Windows Server (AD DS, DNS, DHCP, WSUS), Prometheus, Grafana |
+| Code | Bash, PowerShell, Python, Go, C# / .NET, JavaScript (Node, React), Java, PHP, SQL |
 
 ---
 
-## Projets mis en avant
+## Projets
 
-### [taskflow](https://github.com/thomaspeyr31/taskflow) — DevOps / IaC sur AWS
-API Node/Express déployée sur **AWS ECS Fargate** via **Terraform modulaire**
-(VPC, RDS, ALB), avec **state distant** (S3 + DynamoDB) et un pipeline **CI/CD GitHub Actions**
-(test → build → plan → deploy, authentification OIDC).
+### Sécurité cloud et infrastructure
 
-### [taskboard](https://github.com/thomaspeyr31/taskboard) — Application Kanban temps réel
-Gestion de tâches type Kanban en **ASP.NET Core**, avec **authentification JWT**,
-**temps réel via SignalR**, Entity Framework Core et un frontend intégré.
+**[taskflow](https://github.com/thomaspeyr31/taskflow)** — Déploiement sécurisé sur AWS
 
-### Infrastructure cloud-native AWS multi-sites *(projet de stage — code privé)*
-Déploiement d'une infrastructure d'entreprise multi-sites (siège + agences) sur AWS,
-en **Terraform + Ansible** : VPC segmentés, interconnexion **hub-and-spoke via Transit Gateway**,
-**AWS Managed Microsoft AD**, gestion des habilitations au moindre privilège.
+API conteneurisée sur **ECS Fargate** derrière un ALB, **Terraform modulaire** (VPC, RDS),
+state distant chiffré (S3 + DynamoDB), pipeline **GitHub Actions sans clé statique (OIDC)**
+avec audit des dépendances, scan de l'IaC (Checkov) et de l'image (Trivy).
+
+**[nordis-infra-aws](https://github.com/thomaspeyr31/nordis-infra-aws)** — Infrastructure Windows / Linux d'une PME
+
+Pare-feu **OPNsense**, Active Directory sur deux contrôleurs, **GPO de durcissement**, WSUS,
+centralisation des journaux (WEF + rsyslog), RAID/LVM et sauvegarde avec restauration testée,
+le tout sur AWS avec Terraform.
+
+**Infrastructure cloud multi-sites AWS** *(code privé)*
+
+Infrastructure d'entreprise siège + agences en **Terraform + Ansible** : VPC segmentés,
+interconnexion **hub-and-spoke via Transit Gateway**, Active Directory, habilitations au moindre privilège.
+
+### Développement
+
+**[TaskBoard](https://github.com/thomaspeyr31/TaskBoard)** — Kanban collaboratif en temps réel *(en binôme)*
+
+**ASP.NET Core**, **SignalR**, authentification JWT, Entity Framework Core, tests et CI.
+
+**[cocktail-bar](https://github.com/thomaspeyr31/cocktail-bar)** — Application conteneurisée *(en binôme)*
+
+API Node.js, front React, PostgreSQL et Nginx orchestrés avec **Docker Compose**, déployés sur un VPS.
 
 ---
 
-## Me contacter
+## Contact
 
 - Email : thomassspe@gmail.com
-- GitHub : [@thomaspeyr31](https://github.com/thomaspeyr31)
+- LinkedIn : [thomas-peyrusaubes](https://www.linkedin.com/in/thomas-peyrusaubes-335397338)
