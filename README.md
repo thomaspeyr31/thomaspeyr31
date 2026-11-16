@@ -16,7 +16,7 @@ Focused on **cloud security and DevSecOps**. I design and secure reproducible in
 | Project | What it shows |
 |---|---|
 | **[nordis-infra-aws](https://github.com/thomaspeyr31/nordis-infra-aws)** | The full IT system of an 80-employee company on AWS with **Terraform**: OPNsense firewall, redundant **Active Directory**, hardening GPOs, WSUS, centralized logs, tested backups — then **encrypted, filtered DNS** with DoH/DoT bypass detection. |
-| **[taskflow](https://github.com/thomaspeyr31/taskflow)** | API on **ECS Fargate** behind an ALB, **modular Terraform** (VPC, RDS), encrypted remote state (S3 + DynamoDB), **GitHub Actions with OIDC** (no static keys): test → build → plan on PR → deploy. |
+| **[taskflow](https://github.com/thomaspeyr31/taskflow)** | API on **ECS Fargate** behind an ALB, **modular Terraform** (VPC, RDS), encrypted remote state (S3 + DynamoDB), **GitHub Actions with OIDC** (no static keys) and security gates: dependency audit, Checkov, Gitleaks and Trivy before any deploy. |
 | **[aws-private-vm-access](https://github.com/thomaspeyr31/aws-private-vm-access)** | Taking a VM **off the Internet** and still administering it: Terraform + Ansible case study, comparison of SSM, EC2 Instance Connect Endpoint, bastion and VPN, tag-based IAM access. |
 | **[ymmo-aws-multisite](https://github.com/thomaspeyr31/ymmo-aws-multisite)** | Head office + branches in **Terraform + Ansible over SSM**: one VPC per site, **hub-and-spoke via Transit Gateway**, Active Directory, IPsec VPN, Network Firewall, AWS Backup — deployed from scratch with one script. |
 
@@ -35,7 +35,7 @@ Focused on **cloud security and DevSecOps**. I design and secure reproducible in
 |---|---|
 | Security | Linux & Windows hardening (key-based SSH, Fail2ban, UFW, GPO), bastion, least-privilege IAM, IaC configuration review |
 | Cloud / IaC | AWS (VPC, EC2, ECS Fargate, RDS, S3, Transit Gateway), Terraform, Ansible |
-| DevSecOps / CI-CD | GitHub Actions (OIDC), Docker, Checkov, Trivy, Dependabot |
+| DevSecOps / CI-CD | GitHub Actions (OIDC), Docker, Checkov (IaC), Trivy (images), Gitleaks (secrets), Dependabot, npm audit |
 | Networking | VLAN, OSPF, ACL, NAT, IPsec VPN, OPNsense, pfSense |
 | Systems | Linux (Debian, Ubuntu), Windows Server (AD DS, DNS, DHCP, WSUS), Prometheus, Grafana |
 | Code | Bash, PowerShell, Python, Go, JavaScript (Node, React), Java, PHP, SQL |
@@ -57,7 +57,7 @@ Orienté **sécurité cloud et DevSecOps**. Je conçois et sécurise des infrast
 **Projets phares**
 
 - **[nordis-infra-aws](https://github.com/thomaspeyr31/nordis-infra-aws)** — SI complet d'une PME sur AWS avec Terraform : OPNsense, Active Directory redondé, GPO, WSUS, journaux centralisés, sauvegarde testée, puis DNS chiffré et filtré avec détection du contournement.
-- **[taskflow](https://github.com/thomaspeyr31/taskflow)** — API sur ECS Fargate, Terraform modulaire, état distant chiffré, pipeline GitHub Actions avec OIDC (aucune clé statique).
+- **[taskflow](https://github.com/thomaspeyr31/taskflow)** — API sur ECS Fargate, Terraform modulaire, état distant chiffré, pipeline GitHub Actions avec OIDC (aucune clé statique) et contrôles de sécurité bloquants : audit des dépendances, Checkov, Gitleaks et Trivy.
 - **[aws-private-vm-access](https://github.com/thomaspeyr31/aws-private-vm-access)** — Rendre une VM injoignable depuis Internet et l'administrer quand même : SSM, EC2 Instance Connect Endpoint, bastion, VPN.
 - **[ymmo-aws-multisite](https://github.com/thomaspeyr31/ymmo-aws-multisite)** — Siège + agences en Terraform + Ansible via SSM, hub-and-spoke via Transit Gateway, Active Directory, VPN IPsec, Network Firewall, AWS Backup.
 - **[kine-site](https://github.com/thomaspeyr31/kine-site)** — Plateforme complète pour un cabinet de kiné : RDV en ligne, paiement Stripe, factures PDF, RGPD, sécurité web (CSP, CSRF, limitation des tentatives).
