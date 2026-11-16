@@ -5,7 +5,7 @@
 Focused on **cloud security and DevSecOps**. I design and secure reproducible infrastructure: Infrastructure as Code, system hardening, least-privilege access, monitoring, and CI/CD pipelines with built-in security controls.
 
 
-🇫🇷 [Version française plus bas](#-en-français)
+Version française plus bas](#-en-français)🇫🇷[
 
 ---
 
@@ -47,7 +47,7 @@ Focused on **cloud security and DevSecOps**. I design and secure reproducible in
 
 ---
 
-## En français  🇫🇷
+## En Français  🇫🇷
 
 **Alternant en cybersécurité chez Retengr · Bachelor Cybersécurité, Ynov Toulouse**
 
