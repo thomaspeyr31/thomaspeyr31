@@ -4,7 +4,6 @@
 
 Focused on **cloud security and DevSecOps**. I design and secure reproducible infrastructure: Infrastructure as Code, system hardening, least-privilege access, monitoring, and CI/CD pipelines with built-in security controls.
 
-🎯 Looking for a **work-study position in cloud security / DevSecOps** for my Master's degree, starting **September 2027**.
 
 🇫🇷 [Version française plus bas](#-en-français)
 
@@ -48,13 +47,12 @@ Focused on **cloud security and DevSecOps**. I design and secure reproducible in
 
 ---
 
-## 🇫🇷 En français
+## En français  🇫🇷
 
 **Alternant en cybersécurité chez Retengr · Bachelor Cybersécurité, Ynov Toulouse**
 
 Orienté **sécurité cloud et DevSecOps**. Je conçois et sécurise des infrastructures reproductibles : Infrastructure as Code, durcissement des systèmes, accès au moindre privilège, supervision, et pipelines CI/CD avec des contrôles de sécurité intégrés.
 
-🎯 Je cherche une **alternance en sécurité cloud / DevSecOps** pour mon Mastère, à partir de **septembre 2027**.
 
 **Projets phares**
 
