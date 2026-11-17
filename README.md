@@ -25,7 +25,6 @@ Focused on **cloud security and DevSecOps**. I design and secure reproducible in
 | Project | What it shows |
 |---|---|
 | **[kine-site](https://github.com/thomaspeyr31/kine-site)** | Full platform for a physiotherapy practice: online booking, **Stripe** payments, PDF invoices, patient records, GDPR features. Strict CSP, CSRF protection, rate limiting, Docker + automatic HTTPS. |
-| **[cocktail-bar](https://github.com/thomaspeyr31/cocktail-bar)** *(team of 2)* | Node.js API with roles, React front end, PostgreSQL and Nginx orchestrated with **Docker Compose**, integration tests in CI. |
 
 ---
 
@@ -61,6 +60,5 @@ Orienté **sécurité cloud et DevSecOps**. Je conçois et sécurise des infrast
 - **[aws-private-vm-access](https://github.com/thomaspeyr31/aws-private-vm-access)** — Rendre une VM injoignable depuis Internet et l'administrer quand même : SSM, EC2 Instance Connect Endpoint, bastion, VPN.
 - **[ymmo-aws-multisite](https://github.com/thomaspeyr31/ymmo-aws-multisite)** — Siège + agences en Terraform + Ansible via SSM, hub-and-spoke via Transit Gateway, Active Directory, VPN IPsec, Network Firewall, AWS Backup.
 - **[kine-site](https://github.com/thomaspeyr31/kine-site)** — Plateforme complète pour un cabinet de kiné : RDV en ligne, paiement Stripe, factures PDF, RGPD, sécurité web (CSP, CSRF, limitation des tentatives).
-- **[cocktail-bar](https://github.com/thomaspeyr31/cocktail-bar)** *(en binôme)* — API Node.js, front React, PostgreSQL et Nginx orchestrés avec Docker Compose.
 
 **Contact** : thomassspe@gmail.com · [LinkedIn](https://www.linkedin.com/in/thomas-peyrusaubes-335397338)
